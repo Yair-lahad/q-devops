@@ -1,0 +1,5 @@
+welcome-deployment.yaml
+welcome-service.yaml
+*.pyc
+__pycache__/
+.old/
