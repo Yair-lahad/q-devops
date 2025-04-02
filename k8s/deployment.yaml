@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: my-k8s-app:dev
+        image: my-k8s-app:deploy
         imagePullPolicy: Never
         ports:
         - containerPort: 8000
