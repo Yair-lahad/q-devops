@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-k8s-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-k8s-app
+  template:
+    metadata:
+      labels:
+        app: my-k8s-app
+    spec:
+      containers:
+      - name: app
+        image: my-k8s-app:dev
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
