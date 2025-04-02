@@ -7,7 +7,6 @@ def test_aws_connection():
     print("S3 Buckets:")
     for bucket in response['Buckets']:
         print(f"  {bucket['Name']}")
-    
     ec2 = boto3.client('ec2')
     regions = ec2.describe_regions()
     print("\nAvailable AWS Regions:")
@@ -19,7 +18,6 @@ if __name__ == "__main__":
 
 # import boto3
 # from botocore.exceptions import ClientError
-
 # s3 = boto3.client('s3')
 # try:
 #     s3.create_bucket(
